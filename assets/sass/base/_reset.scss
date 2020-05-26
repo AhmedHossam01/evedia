@@ -1,0 +1,17 @@
+// Reset Default Values
+* {
+    box-sizing: inherit
+}
+
+html {
+    box-sizing: border-box
+}
+
+body {
+    background-color: #f5f4f4 !important;
+}
+
+html, body {
+    widows: 100%;
+    overflow: hidden;
+}

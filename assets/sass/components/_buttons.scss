@@ -1,0 +1,86 @@
+.button_su{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    box-shadow: 7px 10px 25px -11px rgba(236,0,142,1);
+    transition: all .3s ease-in-out;
+
+    border: 0;
+    padding: 0;
+
+&:hover {
+    transform: translateY(3px)
+}
+
+&:active {
+    transform: translateY(1px)
+}
+
+a:first-child {
+    display: none
+}
+}
+
+.su_button_circle{
+    background-color: red;
+    border-radius: 1000px;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    pointer-events: none;
+}
+
+.button_su_inner, .button_su_inner:hover{
+    display: inline-block;
+    background: linear-gradient(to right, #ec008c, #fc6767);
+    color: #F4F4F4;
+    font-weight: normal;
+    min-width: 12rem;
+    text-align: center;
+    border-radius: 3px;
+    transition: 400ms;
+    text-decoration: none;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.button_text_container{
+    position:relative;
+    z-index: 100;
+}
+
+.explode-circle {
+    animation: explode 0.5s forwards;   
+    }
+
+.desplode-circle{
+    animation: desplode 0.5s forwards;
+}
+
+
+
+.video__play {
+    background-color: $color-secondary;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px white;
+
+    i {
+        color: $color-primary-1
+    }
+}

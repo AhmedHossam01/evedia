@@ -1,0 +1,67 @@
+// General Header Styling
+.header {
+  min-height: 50rem;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+
+  @include md {
+    padding-top: 10rem;
+  }
+  .container {
+    margin-top: 6rem;
+    @include md {
+      margin-top: 0;
+    }
+  }
+  .hero {
+    &__subtitle {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-weight: 300;
+      text-align: center;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
+      letter-spacing: 0.2rem;
+
+      @include lg {
+        font-size: 1.3rem;
+      }
+    }
+    &__title {
+      font-size: 2rem;
+      line-height: 145%;
+      font-weight: 900;
+
+      @include lg {
+        margin: 2rem;
+        font-size: 3rem;
+      }
+    }
+  }
+  .info {
+    display: flex;
+    margin: 2rem;
+    &__item {
+      display: flex;
+      align-items: center;
+      &:not(:last-of-type) {
+        margin-right: 3rem;
+      }
+    }
+    &__icon {
+      margin-right: 0.5rem;
+      font-size: 2rem;
+      color: $color-secondary;
+    }
+    &__content {
+      font-size: 1.2rem;
+      font-weight: bold;
+      font-family: "Quicksand";
+      text-transform: uppercase;
+    }
+  }
+}

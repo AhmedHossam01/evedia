@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Website's title -->
+    <title>Evedia - A modern theme for conferences and events</title>
+    <!-- Here goes the styling files which contains Bootstrap 4.3.1 & Animate.css and theme's main styling file -->
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendors/animate.css">
+    <link rel="stylesheet" href="assets/css/vendors/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="assets/sass/main.css">
+</head>
+<body>
+    <!-- ######### Start of Top Contact Info ######### -->
+    <div class="main-info fixed-top">
+        <div class="container d-flex align-items-center">
+            <div class="d-flex align-items-center mr-5">
+                <i class="fas fa-phone-alt mr-1 fa-2x text-light"></i>
+                <p class="text-light">+000 000 000</p>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="fas fa-envelope mr-2 fa-2x text-light"></i>
+                <p class="text-light">e-mail@company.com</p>
+            </div>
+            <button class="btn btn-dark ml-auto d-none d-sm-block">Book Now</button>
+            <button class="btn btn-outline-dark ml-2 d-none d-sm-block">Contact</button>
+        </div>
+    </div>
+    <!-- ######### End of Top Contact Info ######### -->
+
+    <!-- ######### Start of Navbar ######### -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-lg">
+        <div class="container">
+            <!-- Logo Here - You can make it as img or text -->
+            <a href="index.html" class="navbar-brand">E<span>ve</span>d<span>ia</span></a>
+            <!-- Here button to display navbar menu on small screen -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white fa-2x"></i>
+            </button>
+            <!-- Here goes the navbar menu (links) -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto justify-content-center">
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link active">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Speakers</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Schedule</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ######### End of Navbar ########### -->
+
+    <!-- ######### Start of Header ########### -->
+    <header class="header shadow-lg">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="assets/images/video/coverr-business-man-walking.mp4" type="video/mp4">
+            </video>
+            <div class="primary-overlay"></div>
+        </div>
+        <div class="container d-flex flex-column justify-content-center align-items-center hero">
+            <h1 class="h2 hero__subtitle">
+                The most powerful marketing conference in the middle east
+            </h1>
+            <h2 class="h1 hero__title text-center">
+                Evedia - 1st marketing conference in 2020, our goal is to take marketing to the next level in the middle east.
+            </h2>
+            <div class="info">
+                <div class="info__item">
+                    <div class="info__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info__content">
+                        Cairo, Egypt
+                    </div>
+                </div>
+                <div class="info__item">
+                    <div class="info__icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="info__content">
+                        July 21, 2020
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ######### End of Header ########### -->
+
+    <!-- ######### Start of Countdown Timer Section ########### -->
+    <section class="countdown">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="countdown__heading wow bounceInLeft">
+                        <h2 class="text-capitalize heading-1 mb-4">Hurry up! Don't waste time</h2>
+                        <p class="lead">Morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, tristique senectus et netus et malesuada fames ac turpis</p>
+                        <div class="button_su mt-3 wow fadeIn" data-wow-offset="0" data-wow-delay=".3s">
+                            <a href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 d-flex align-items-center justify-content-center">
+                    <div class="countdown__timer wow fadeInRight">
+                        <ul>
+                            <div class="row">
+                                <div class="col-6 col-xl-3">
+                                    <li><span id="days"></span><span>Day</span></li>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <li><span id="hours"></span><span>Hour</span></li>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <li><span id="minutes"></span><span>Minute</span></li>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <li><span id="seconds"></span><span>Second</span></li>
+                                </div>
+                            <div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ######### End of Countdown Timer Section ########### -->
+
+    <!-- ######### Start of Features Section ######### -->
+    <section id="features">
+        <div class="features shadow-lg">
+            <div class="features__cards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="features__cards__item wow fadeInDown">
+                                <i class="features__cards__icon fas fa-microphone-alt"></i>
+                                <h3 class="features__cards__heading">Good Speakers</h3>
+                                <p class="features__cards__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="features__cards__item wow fadeInRight">
+                                <i class="features__cards__icon fas fa-fill-drip"></i>
+                                <h3 class="features__cards__heading">Learn Skills</h3>
+                                <p class="features__cards__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="features__cards__item wow fadeInLeft">
+                                <i class="features__cards__icon fas fa-users"></i>
+                                <h3 class="features__cards__heading">Communication</h3>
+                                <p class="features__cards__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="features__cards__item wow fadeInUp">
+                                <i class="features__cards__icon fas fa-hands-helping"></i>
+                                <h3 class="features__cards__heading">Proud Sponsers</h3>
+                                <p class="features__cards__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ######### End of Features Section ######### -->
+
+    <!-- ######### Start of About Section ######### -->
+    <section class="about">
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about__heading wow bounceInLeft">
+                            <h2 class="text-capitalize heading-1 mb-4">What's Evedia Conference?</h2>
+                            <p class="lead">Morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, tristique senectus et netus et malesuada fames ac turpis</p>
+                            <p class="lead">Morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, tristique senectus et netus et malesuada fames ac turpis</p>
+                            <button class="button_su mt-3 wow fadeIn" data-wow-offset="0" data-wow-delay=".5s">
+                                <a href="#">More Information</a>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center wow fadeInRight">
+                        <div class="about__picture">
+                            <img src="assets/images/about-picture.jpg" alt="" data-object-fit="cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ######### End of About Section ######### -->
+
+    <!-- ######### Start of Speakers Section ######### -->
+    <section class="speakers shadow-lg">
+        <div class="container">
+            <div class="speakers__heading d-flex flex-column align-items-center mb-5 wow fadeIn">
+                <div class="heading-1 heading-1--centered heading-1--light mb-4">Speakers</div>
+                <p class="lead w-75 text-center text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nihil libero, voluptates voluptas aut vitae ut vel dignissimos earum culpa!</p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="speaker-cards">
+                <div class="speaker">
+                    <div class="pic">
+                        <img src="assets/images/p1.jpg" alt="" data-object-fit="cover">
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="speaker-content">
+                        <h3 class="title">Williamson</h3>
+                        <small class="post">web developer</small>
+                        <small>Email: <b>mail@example.com</b></small>
+                    </div>
+                    <div class="speaker-layer">
+                        <a href="#">Williamson</a>
+                        <span class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ex.</span>
+                    </div>
+                </div>
+                
+                <div class="speaker">
+                    <div class="pic">
+                        <img src="assets/images/p2.jpg" alt="" data-object-fit="cover">
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="speaker-content">
+                        <h3 class="title">Williamson</h3>
+                        <small class="post">web developer</small>
+                        <small>Email: <b>mail@example.com</b></small>
+                    </div>
+                    <div class="speaker-layer">
+                        <a href="#">Williamson</a>
+                        <span class="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nam.</span>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="pic">
+                        <img src="assets/images/p5.jpg" alt="" data-object-fit="cover">
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="speaker-content">
+                        <h3 class="title">Williamson</h3>
+                        <small class="post">web developer</small>
+                        <small>Email: <b>mail@example.com</b></small>
+                    </div>
+                    <div class="speaker-layer">
+                        <a href="#">Williamson</a>
+                        <span class="post">web developer</span>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="pic">
+                        <img src="assets/images/p6.jpg" alt="" data-object-fit="cover">
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="speaker-content">
+                        <h3 class="title">Williamson</h3>
+                        <small class="post">web developer</small>
+                        <small>Email: <b>mail@example.com</b></small>
+                    </div>
+                    <div class="speaker-layer">
+                        <a href="#">Williamson</a>
+                        <span class="post">web developer</span>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="pic">
+                        <img src="assets/images/p3.jpg" alt="" data-object-fit="cover">
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="speaker-content">
+                        <h3 class="title">Williamson</h3>
+                        <small class="post">web developer</small>
+                        <small>Email: <b>mail@example.com</b></small>
+                    </div>
+                    <div class="speaker-layer">
+                        <a href="#">Williamson</a>
+                        <span class="post">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, fugit!</span>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="pic">
+                        <img src="assets/images/p4.jpg" alt="" data-object-fit="cover">
+                        <ul class="social">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="speaker-content">
+                        <h3 class="title">Williamson</h3>
+                        <small class="post">web developer</small>
+                        <small>Email: <b>mail@example.com</b></small>
+                    </div>
+                    <div class="speaker-layer">
+                        <a href="#">Williamson</a>
+                        <span class="post">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, eum?</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ######### End of Speakers Section ######### -->
+
+    <!-- ######### Start of Schedule Section ######### -->
+    <section class="schedule__section">
+        <div class="container">
+            <div class="heading-1 heading-1--centered mb-4">Schedule</div>
+            <p class="lead text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem necessitatibus sunt earum illum impedit quo iure exercitationem ex unde fuga.</p>
+            <div class="schedule pt-5">
+                <div class="row">
+                    <div class="schedule__buttons col-lg-3">
+                        <div class="row justify-content-center">
+                            <div class="schedule__button active col-lg-12 col-3" data-target="2020-jun-14">
+                                <p class="display-1">14</p>
+                                <p class="mt-n4">JUNE, 2020</p>
+                                <P class="mt-n3">Monday</P>
+                            </div>
+                            <div class="schedule__button col-lg-12 col-3" data-target="2020-jun-15">
+                                <p class="display-1">15</p>
+                                <p class="mt-n4">JUNE, 2020</p>
+                                <P class="mt-n3">Tuseday</P>
+                            </div>
+                            <div class="schedule__button col-lg-12 col-3" data-target="2020-jun-18">
+                                <p class="display-1">18</p>
+                                <p class="mt-n4">JUNE, 2020</p>
+                                <P class="mt-n3">Thursday</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule__content col-lg-9">
+                        <div class="schedule__item active" id="2020-jun-14">
+                            <div class="schedule__event">
+                                <div class="schedule__event__img"><img src="assets/images/p3.jpg"></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">01:00 PM</p>
+                                    <p class="schedule__event__topic">Introduction to Marketing</p>
+                                    <p class="schedule__event__speaker"><span>John Doe</span> - <span>Marketing Specialist</span></p>
+                                </div>
+                            </div>
+                            <div class="schedule__event">
+                                <div class="schedule__event__img"><img src="assets/images/p5.jpg"></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">02:30 PM</p>
+                                    <p class="schedule__event__topic">Dive deep in brand awarness</p>
+                                    <p class="schedule__event__speaker"><span>Ransom Boker</span> - <span>Founder of Marketero</span></p>
+                                </div>
+                            </div>
+                            <div class="schedule__event schedule__event--break">
+                                <div class="schedule__event__img schedule__event--break__img"><i class="fas fa-hamburger"></i></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">04:00 PM</p>
+                                    <p class="schedule__event__topic">Enjoy the lunch break</p>
+                                </div>
+                            </div>
+                            <div class="schedule__event">
+                                <div class="schedule__event__img"><img src="assets/images/p4.jpg"></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">02:30 PM</p>
+                                    <p class="schedule__event__topic">How to sell 1000 product in one week</p>
+                                    <p class="schedule__event__speaker"><span>Ramy Kamal</span> - <span>Founder of Marketero</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule__item" id="2020-jun-15">
+                            <div class="schedule__event">
+                                <div class="schedule__event__img"><img src="assets/images/p5.jpg"></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">08:00 AM</p>
+                                    <p class="schedule__event__topic">Dive deep into product awarness</p>
+                                    <p class="schedule__event__speaker"><span>Ransom Boker</span> - <span>Founder of Marketero</span></p>
+                                </div>
+                            </div>
+                            <div class="schedule__event">
+                                <div class="schedule__event__img"><img src="assets/images/p6.jpg"></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">02:30 PM</p>
+                                    <p class="schedule__event__topic">Advertising secrets</p>
+                                    <p class="schedule__event__speaker"><span>Abou Hossam</span> - <span>Advertising Specialist</span></p>
+                                </div>
+                            </div>
+                            <div class="schedule__event schedule__event--break">
+                                <div class="schedule__event__img schedule__event--break__img"><i class="fas fa-coffee"></i></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">09:30 PM</p>
+                                    <p class="schedule__event__topic">Enjoy the Coffe break</p>
+                                </div>
+                            </div>
+                            <div class="schedule__event">
+                                <div class="schedule__event__img"><img src="assets/images/p1.jpg"></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">11:30 PM</p>
+                                    <p class="schedule__event__topic">Deep secret of marketing</p>
+                                    <p class="schedule__event__speaker"><span>Ramy Kamal</span> - <span>Founder of Marketero</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="schedule__item" id="2020-jun-18">
+                            <div class="schedule__event">
+                                <div class="schedule__event__img"><img src="assets/images/p1.jpg"></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">12:00 PM</p>
+                                    <p class="schedule__event__topic">Why you fail</p>
+                                    <p class="schedule__event__speaker"><span>Ramy Kamal</span> - <span>Founder of Marketero</span></p>
+                                </div>
+                            </div>
+                            <div class="schedule__event schedule__event--break">
+                                <div class="schedule__event__img schedule__event--break__img"><i class="fas fa-users"></i></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">01:30 PM</p>
+                                    <p class="schedule__event__topic">communication break</p>
+                                </div>
+                            </div>
+                            <div class="schedule__event schedule__event--break">
+                                <div class="schedule__event__img schedule__event--break__img"><i class="fas fa-utensils"></i></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">02:30 PM</p>
+                                    <p class="schedule__event__topic">Enjoy the breakfast break</p>
+                                </div>
+                            </div>
+                            <div class="schedule__event">
+                                <div class="schedule__event__img"><img src="assets/images/p6.jpg"></div>
+                                <div class="schedule__event__data">
+                                    <p class="schedule__event__time">03:00 PM</p>
+                                    <p class="schedule__event__topic">Conclusion</p>
+                                    <p class="schedule__event__speaker"><span>Thomas Edison</span> - <span>CEO at Evedia</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ######### End of Schedule Section ######### -->
+
+    <!-- ######### Start of Additionals ########### -->
+    <div class="loader">
+        <div class="lds-ripple"><div>
+    </div>
+    <!-- ######### End of Additionals ########### -->
+
+    <!-- ######### Start of Scripts ########### -->
+    <script src="assets/javascript/vendors/jquery-3.4.1.min.js"></script>
+    <script src="assets/javascript/vendors/bootstrap.min.js"></script>
+    <script src="assets/javascript/vendors/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/dea69459cd.js"></script>
+    <script src="assets/javascript/vendors/jquery.nicescroll.min.js"></script>
+    <script src="assets/javascript/vendors/jquery.fancybox.min.js"></script>
+    <script src="assets/javascript/vendors/jquery.hoverflow.min.js"></script>
+    <script src="assets/javascript/vendors/slick.min.js"></script>
+    <script src="assets/javascript/vendors/shuffle.min.js"></script>
+    <script src="assets/javascript/vendors/objectFitPolyfill.min.js"></script>
+    <script src="assets/javascript/main.js"></script>
+    <!-- ######### End of Scripts ########### -->
+</body>
+</html>

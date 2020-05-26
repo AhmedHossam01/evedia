@@ -1,0 +1,36 @@
+// Mexins for media queries based on Bootstrap standard sizes
+@mixin sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin xs {
+    @media (max-width: 334px) {
+        @content;
+    }
+}
+
+// Mixin for making an overlay
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}

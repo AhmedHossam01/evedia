@@ -1,0 +1,125 @@
+// Main Contact Info
+.main-info {
+    background: $red-to-purple;
+
+    p {
+        margin-top: 1rem;
+        font-family: 'Quicksand', sans-serif;
+        font-size: .7rem;
+        @include md {
+            font-size: 1.2rem
+        }
+        @include lg {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+// Navbar Styling
+.navbar {
+    transition: padding .5s, margin-top .2s;
+    padding: 2rem 2rem;
+    margin-top: 0;
+
+    @include lg {
+        padding: 3rem 0 3rem !important;
+    }
+    @include sm {
+        padding: 2rem 0;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    // Navbar Styling When User Scrolls 
+    &-scrolled {
+        background-color: $color-tertiary-2;
+        background: $red-to-purple;
+        padding: 0 2rem;
+
+        @include lg {
+            padding: 1.9rem 0 1.9rem !important;
+        }
+        @include sm {
+            padding: 0
+        }
+    }
+
+    // Logo Styling
+    &-brand {
+        font-family: Montserrat;
+        color: white;
+        position: relative;
+        font-size: 1.6rem !important;
+        @include lg {
+            position: absolute;
+        }
+
+        span {
+            color: $color-secondary
+        }
+    
+        &:hover,
+        &:active {
+            color: white;
+        }
+    }
+
+    // Navbar Menu Toggle Button
+    &-toggler {
+        &:focus {
+            outline: none
+        }
+        &-clicked {
+            background: $red-to-purple;
+        }
+    }
+
+    // Navbar Menu
+    &-nav {
+        position: relative;
+        right: 0;
+        height: 100vh;
+        @include lg {
+            position: absolute;
+            height: auto
+        }
+    }
+
+    // Navbar Item Inside Menu
+    &-item {
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+
+        &:not(:last-of-type) {
+            padding-bottom: 3rem;
+        }
+
+        @include lg {
+            text-align: left;
+            font-size: 1.1rem;
+            padding-bottom: 0 !important;
+
+            &:not(:last-of-type) {
+                padding-right: 1.5rem; 
+            }
+        }
+    }
+
+    // Navbar link inside each item
+    &-link,
+    &-link:hover {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .3s;
+    }
+
+    &-link:hover,
+    &-link.active {
+        color: $color-secondary;
+    }
+}

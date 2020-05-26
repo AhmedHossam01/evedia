@@ -1,0 +1,6 @@
+// Primary Overlay
+.primary-overlay {
+    @include overlay;
+    background-color: $color-tertiary-3;
+    background: linear-gradient(to right, rgba(darken(#f64f59, 30), .7), rgba(darken(#c471ed, 30), .7), rgba(darken(#12c2e9, 30), .7));
+}

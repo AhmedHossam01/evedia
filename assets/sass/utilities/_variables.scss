@@ -1,0 +1,18 @@
+// Main Colors Variables
+$color-primary-1: #2e294e;
+$color-primary-2: #541388;
+
+$color-secondary: #ffd400;
+
+$color-tertiary-1: #d90368;
+$color-tertiary-2: #f80759;
+$color-tertiary-3: #bc4e9c;
+
+// Gredients
+$red-to-purple: linear-gradient(to right, rgba($color-tertiary-2, .95), rgba($color-tertiary-3, .95));
+
+$light-text-gredient: linear-gradient(to right, #efefbb, #d4d3dd);
+$dark-text-gredient: radial-gradient($color-primary-1, $color-primary-2);;
+
+// Margins & Paddings Variables
+$margin-between-sections: 8rem
