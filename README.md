@@ -1,7 +1,7 @@
 # Evedia Theme
 Old project built with jQuery, SASS, Bootstrap 4. Intended to be a theme for event websites.
 
-Live Preview: (https://evedia.netlify.app/)[https://evedia.netlify.app/]
+Live Preview: [https://evedia.netlify.app/](https://evedia.netlify.app/)
 
 ## Pictures
 
